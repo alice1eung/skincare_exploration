@@ -1,3 +1,7 @@
+
+//starting off with code from the bloew link and adapting it to make it more interactive
+//https://medium.freecodecamp.org/a-gentle-introduction-to-d3-how-to-build-a-reusable-bubble-chart-9106dc4f6c46
+
 function bubbleChart() {
     var width = 960,
         height = 960,
