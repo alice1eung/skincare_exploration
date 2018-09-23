@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<div class="chart-example" id = "chart"><svg></svg></div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="bubble_chart.js"></script>
+<script>
+	d3.csv("skincare.csv", function(error, data) {
+		if (error) {
+			console.error('Error reading in the data.');
+			throw error;
+		}
+		var chart= bubbleChart().width(600).height(400);
+		d3.select('#chart').datum(data).call(chart);
+	});
+</script>
